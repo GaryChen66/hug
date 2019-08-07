@@ -1,0 +1,11 @@
+[report]
+include = hug/*.py
+omit = hug/development_runner.py
+exclude_lines = def hug
+                def serve
+                def _start_api
+                sys.stdout.buffer.write
+                class Socket
+                pragma: no cover
+                except ImportError:
+                if MARSHMALLOW_MAJOR_VERSION is None or MARSHMALLOW_MAJOR_VERSION == 2:
