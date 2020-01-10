@@ -13,7 +13,7 @@ import jwt
 #Authentication start
 authentication = hug.authentication.basic(hug.authentication.verify("User1", "mypassword"))
 
-
+#Authenticate URL
 @hug.get("/public")
 def public_api_call():
     return "Needs no authentication"
