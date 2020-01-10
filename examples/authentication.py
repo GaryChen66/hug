@@ -9,6 +9,8 @@ import jwt
 # on successful authentication. Naturally, this is a trivial demo, and a much
 # more robust verification function is recommended. This is for strictly
 # illustrative purposes.
+
+#Authentication start
 authentication = hug.authentication.basic(hug.authentication.verify("User1", "mypassword"))
 
 
