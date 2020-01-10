@@ -3,7 +3,6 @@ import hug
 API = hug.API("git")
 
 #CLI Object Load
-
 @hug.object(name="git", version="1.0.0", api=API)
 class GIT(object):
     """An example of command like calls via an Object"""
